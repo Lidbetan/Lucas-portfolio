@@ -2,7 +2,7 @@ export default [
     {   
         id:1,
         title:"T-shirt e-commerce",
-        imgUrl:"",
+        imgUrl:"src/assets/rockandd-cover.png",
         stack:["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "React ", "Vite "],
         link: "https://rockandd.netlify.app/"
     },
