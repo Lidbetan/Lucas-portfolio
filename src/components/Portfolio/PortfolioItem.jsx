@@ -2,7 +2,7 @@ import React from 'react'
 
 const PortfolioItem = ({title, imgUrl, stack, link }) => {
     return (
-        <div className='border-2 border-stone-900 rounded-md overflow-hidden'>
+        <div className='border-2 border-stone-900 dark:border-stone-300 rounded-md overflow-hidden'>
             <div className='border-black border-b-{4px}'>
                 <a href={link}>
                     <img src={imgUrl}
@@ -15,7 +15,12 @@ const PortfolioItem = ({title, imgUrl, stack, link }) => {
                 <h3 className='text-lg md:text-xl mb-2 md:mb-3 font-semibold'>{title}</h3>
                 <p className='flex flex-wrap gap-2 flew-row items-center justify-start text-xs md:text-sm '>
                     {stack.map((item, i) => (
-                        <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 rounded-md" key={[i]}>{item}</span>
+                        <span 
+                        className="inline-block px-2 py-1 font-semibold border-2
+                                border-stone-900 dark:border-stone-300
+                                bg-slate-600 dark:bg-slate-300 
+                                text-white dark:text-black
+                                rounded-md" key={[i]}>{item}</span>
                     ))}
                 </p>
 

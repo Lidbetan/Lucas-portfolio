@@ -2,7 +2,11 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div>Contact</div>
+        <div className='flex flex-col mb-10 mx-auto '>
+            <div className='flex justify-center items-center'>
+                <form action=""></form>
+            </div>
+        </div>
     )
 }
 
