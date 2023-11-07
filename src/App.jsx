@@ -1,5 +1,6 @@
 
 import { useContext, useEffect, useState } from "react"
+import "boxicons"
 import Contact from "./components/Contact"
 import DarkMode from "./components/DarkModeButton/DarkMode"
 import Footer from "./components/Footer"
@@ -25,7 +26,7 @@ function App() {
       <div className="flex flex-col items-center justify-center w-11/12 m-auto ">
         <Intro className="" />
         <Portfolio />
-        {/* <Contact/> */}
+        <Contact/>
         <Footer />
       </div>
     </>
