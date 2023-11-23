@@ -1,3 +1,4 @@
+
 export default [
     {   
         id:1,
@@ -25,7 +26,7 @@ export default [
     {   
         id:5,
         title:"TypeScript",
-        imgUrl:"../src/assets/typescript-logo-36.png",
+        imgUrl:"src/assets/bootstrap-logo-36.png",
     
     },
     {   
