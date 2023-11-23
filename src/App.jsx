@@ -7,12 +7,14 @@ import Footer from "./components/Footer"
 import Intro from "./components/Intro"
 import Portfolio from "./components/Portfolio/Portfolio"
 import Technologies from "./components/Technologies/Technologies"
-import themeContext from "./components/context/themeContext"
+import ThemeContext from "./components/context/ThemeContext"
+
+
 
 
 
 function App() {
-  const {theme, handleThemeSwitch} = useContext(themeContext)
+  const {theme, handleThemeSwitch} = useContext(ThemeContext)
 
   return (
     <>
