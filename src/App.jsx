@@ -6,13 +6,13 @@ import DarkMode from "./components/DarkModeButton/DarkMode"
 import Footer from "./components/Footer"
 import Intro from "./components/Intro"
 import Portfolio from "./components/Portfolio/Portfolio"
-import ThemeContext from "./components/context/themeContext"
 import Technologies from "./components/Technologies/Technologies"
+import themeContext from "./components/context/themeContext"
 
 
 
 function App() {
-  const {theme, handleThemeSwitch} = useContext(ThemeContext)
+  const {theme, handleThemeSwitch} = useContext(themeContext)
 
   return (
     <>
