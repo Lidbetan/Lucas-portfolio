@@ -1,4 +1,3 @@
-import React from 'react'
 
 const PortfolioItem = ({title, imgUrl, stack, link }) => {
     return (

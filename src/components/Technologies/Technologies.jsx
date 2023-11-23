@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Technology from './Technology'
 
 const Technologies = () => {
