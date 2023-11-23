@@ -1,4 +1,3 @@
-import React from 'react'
 import technologies from '../../data/technologies'
 
 const Technology = () => {

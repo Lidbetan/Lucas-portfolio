@@ -1,5 +1,5 @@
 
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 import "boxicons"
 import Contact from "./components/Contact"
 import DarkMode from "./components/DarkModeButton/DarkMode"
