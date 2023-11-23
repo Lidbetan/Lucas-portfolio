@@ -25,7 +25,6 @@ const ThemeContextProvider = ({ children }) => {
     }
   }, [theme])
 
-
   const values = {
     theme,
     handleThemeSwitch
