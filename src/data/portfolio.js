@@ -8,10 +8,10 @@ export default [
     },
     {   
         id:2,
-        title:"Project #2",
-        imgUrl:"",
-        stack:["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "React ", "Vite "],
-        link: "somelink#2"
+        title:"Coffee Store e-commerce",
+        imgUrl:"/assets/locos-x-el-cafe.png",
+        stack:["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "SASS"],
+        link: "https://locos-por-el-cafe.vercel.app/"
     },
     {   
         id:3,

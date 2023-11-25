@@ -26,7 +26,7 @@ function App() {
         <DarkMode theme={theme} />
       </button>
 
-      <div className="flex flex-col items-center justify-center w-11/12 m-auto ">
+      <div className=" flex flex-col items-center justify-center w-11/12 m-auto ">
         <Intro className="" />
         <Technologies/>
         <Portfolio />
