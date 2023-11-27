@@ -8,6 +8,9 @@ import Intro from "./components/Intro"
 import Portfolio from "./components/Portfolio/Portfolio"
 import Technologies from "./components/Technologies/Technologies"
 import ThemeContext from "./components/context/ThemeContext"
+import AboutMe from "./components/AboutMe"
+
+
 
 
 
@@ -27,7 +30,9 @@ function App() {
       </button>
 
       <div className=" flex flex-col items-center justify-center w-11/12 m-auto ">
+        {/* <NavComp/>  */}
         <Intro className="" />
+        <AboutMe/>
         <Technologies/>
         <Portfolio />
         <Contact/>
