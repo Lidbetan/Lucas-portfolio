@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
-    <section id="aboutMe">
-      <div className="my-10 text-slate-900 dark:text-slate-300">
+    <section id="about">
+      <div className="my-10 text-slate-900 dark:text-slate-300 md:h-96">
         <h2 className="font-bold mb-9 text-2xl text-center uppercase ">
           About Me
         </h2>

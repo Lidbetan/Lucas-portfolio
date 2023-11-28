@@ -1,11 +1,10 @@
-import React from "react";
 import portfolio from "../../data/portfolio";
 import PortfolioItem from "./PortfolioItem";
 
 const Portfolio = () => {
   return (
     <>
-      <div className="my-10">
+      <section className="my-14" id="projects">
         <h2 className="font-bold mb-20 text-2xl text-center uppercase text-slate-900 dark:text-slate-300">
           My projects
         </h2>
@@ -22,7 +21,7 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
