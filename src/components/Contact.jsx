@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
 import ThemeContext from './context/ThemeContext'
+import { useContext } from 'react'
 
 const Contact = () => {
     const { theme } = useContext(ThemeContext)
@@ -7,7 +7,7 @@ const Contact = () => {
         <div className='flex flex-col mb-10 mx-auto '>
             <div className='flex justify-center items-center'>
 
-                <a target="_blank" href='https://www.linkedin.com/in/lucas-id-betan-dev/'>
+                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/lucas-id-betan-dev/'>
                     {theme === "dark" ?
                         <div>
                             <box-icon name='linkedin-square' type='logo' animation='tada-hover' color='#cbd5e1' size="lg" ></box-icon>
