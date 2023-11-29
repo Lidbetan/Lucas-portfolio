@@ -8,7 +8,6 @@ const NavComp = () => {
           <NavHashLink
             className="text-slate-300 dark:text-slate-900 "
             smooth
-            activeClassName="selected"
             to="/#"
           >
             Home
@@ -16,7 +15,6 @@ const NavComp = () => {
           <NavHashLink
             className=" text-slate-300 dark:text-slate-900"
             smooth
-            activeClassName="selected"
             to="/#about"
           >
             About
@@ -24,7 +22,6 @@ const NavComp = () => {
           <NavHashLink
             className=" text-slate-300 dark:text-slate-900"
             smooth
-            activeClassName="selected"
             to="/#skills"
           >
             Skills
@@ -32,7 +29,6 @@ const NavComp = () => {
           <NavHashLink
             className=" text-slate-300 dark:text-slate-900"
             smooth
-            activeClassName="selected"
             to="/#projects"
           >
             Projects
@@ -40,8 +36,7 @@ const NavComp = () => {
           <NavHashLink
             className=" text-slate-300 dark:text-slate-900"
             smooth
-            activeClassName="selected"
-            to="/#"
+            to="/#contact"
           >
             Contact
           </NavHashLink>

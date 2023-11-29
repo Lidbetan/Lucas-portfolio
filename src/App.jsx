@@ -1,7 +1,6 @@
 
 import { useContext } from "react"
 import "boxicons"
-import Contact from "./components/Contact"
 import DarkMode from "./components/DarkModeButton/DarkMode"
 import Footer from "./components/Footer"
 import Intro from "./components/Intro"
@@ -10,8 +9,7 @@ import Technologies from "./components/Technologies/Technologies"
 import ThemeContext from "./components/context/ThemeContext"
 import AboutMe from "./components/AboutMe"
 import NavComp from "./components/Navbar/NavComp"
-
-
+import Contact from "./components/Contact/Contact"
 
 
 
