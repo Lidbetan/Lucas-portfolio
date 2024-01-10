@@ -12,7 +12,7 @@ export default [
         imgUrl:"/assets/locos-x-el-cafe.png",
         stack:["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "SASS"],
         link: "https://locos-por-el-cafe.vercel.app/"
-    }
+    },
     {   
         id:3,
         title:"Redux Toolkit - Postlist",
