@@ -1,7 +1,7 @@
 
 const PortfolioItem = ({title, imgUrl, stack, link }) => {
     return (
-        <div className='border-2 border-stone-900 dark:border-stone-300 rounded-md overflow-hidden'>
+        <div className='max-w-[425px] max-h-[340px] lg:h-[340px] border-2 border-stone-900 dark:border-stone-300 rounded-md overflow-hidden'>
             <div className='border-black border-b-{4px}'>
                 <a href={link}>
                     <img src={imgUrl}
@@ -10,7 +10,7 @@ const PortfolioItem = ({title, imgUrl, stack, link }) => {
                     </img>
                 </a>
             </div>
-            <div className='w-full p-4'>
+            <div className='p-4'>
                 <h3 className='text-center text-lg md:text-xl mb-2 md:mb-3 font-semibold'>{title}</h3>
                 <p className='flex flex-wrap gap-2 flew-row items-center justify-start text-xs md:text-sm '>
                     {stack.map((item, i) => (
