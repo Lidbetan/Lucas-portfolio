@@ -1,12 +1,11 @@
 import ThemeContext from "../context/ThemeContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import ContactForm from "./ContactForm";
+
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
   
-
-
   return (
     <>
       <section id="contact">

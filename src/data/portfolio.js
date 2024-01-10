@@ -13,11 +13,11 @@ export default [
         stack:["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "SASS"],
         link: "https://locos-por-el-cafe.vercel.app/"
     }
-    // {   
-    //     id:3,
-    //     title:"Project #3",
-    //     imgUrl:"",
-    //     stack:["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "React ", "Vite "],
-    //     link: "somelink#3"
-    // }
+    {   
+        id:3,
+        title:"Redux Toolkit - Postlist",
+        imgUrl:"/assets/rtk-post.png",
+        stack:["HTML ", "CSS ", "JavaScript ", "Tailwind ", "React ", "Redux", "Vite "],
+        link: "https://rtk-post-list.vercel.app/"
+    }
 ]
