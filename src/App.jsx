@@ -22,7 +22,7 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-2 top-2 bg-slate-600 dark:bg-slate-300 text-lg text-slate-300 dark:text-slate-600 rounded-xl"
+        className="fixed p-2 z-10 right-9 top-7 md:right-20 lg:right-24 xl:right-24 bg-slate-600 dark:bg-slate-300 text-lg text-slate-300 dark:text-slate-600 rounded-xl"
       >
         <DarkMode theme={theme} />
       </button>
