@@ -86,7 +86,7 @@ const ContactForm = () => {
           placeholder="Name"
           className="  text-slate-900 dark:text-slate-300 
                          p-2 bg-transparent
-                         border-solid border-slate-600 border-2 
+                         border-solid border-slate-600 dark:border-slate-300 border-2 
                          w-full 
                          rounded-md
                          focus:outline-none"
@@ -99,7 +99,7 @@ const ContactForm = () => {
           className="text-slate-900 dark:text-slate-300
                        my-2 p-2 bg-transparent
                        w-full
-                       border-solid border-slate-600 border-2
+                       border-solid border-slate-600 dark:border-slate-300 border-2
                        rounded-md
                        focus:outline-none"
         />
@@ -111,7 +111,7 @@ const ContactForm = () => {
           className="text-slate-900 dark:text-slate-300
                        p-2 mb-4 bg-transparent
                        w-full
-                       border-solid border-slate-600 border-2 
+                       border-solid border-slate-600 dark:border-slate-300 border-2 
                        rounded-md
                        focus:outline-none"
         />
@@ -131,7 +131,8 @@ const ContactForm = () => {
           className="text-center uppercase
              px-5 py-3 w-full md:w-7/12 m-auto text-base
              font-semibold rounded-md
-             bg-gradient-to-r from-orange-500 to-blue-400 drop-shadow-md"
+             focus:outline-none focus:ring focus:ring-violet-300
+             bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
         >
           Let's work
         </button>

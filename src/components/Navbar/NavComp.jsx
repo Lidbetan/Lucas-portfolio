@@ -45,38 +45,37 @@ export default function Example() {
                                 </div> */}
                                 <div className="hidden sm:block">
                                     <div className="flex space-x-4">
-                                        <ul className=" md:flex justify-center gap-2 py-2 uppercase font-semibold">
+                                        <ul className=" md:flex justify-center gap-4 py-2 uppercase font-semibold">
                                             <NavHashLink
-                                                className="text-slate-300 dark:text-slate-600 "
+                                                className="my-links text-slate-300 dark:text-slate-600  "
                                                 smooth
                                                 to="/#"
                                             >
                                                 Home
                                             </NavHashLink>
                                             <NavHashLink
-                                                className=" text-slate-300 dark:text-slate-600"
+                                                className=" my-links text-slate-300 dark:text-slate-600 "
                                                 smooth
                                                 to="/#about"
                                             >
                                                 About
                                             </NavHashLink>
                                             <NavHashLink
-                                                className=" text-slate-300 dark:text-slate-600"
+                                                className=" my-links text-slate-300 dark:text-slate-600 "
                                                 smooth
                                                 to="/#skills"
                                             >
                                                 Skills
                                             </NavHashLink>
                                             <NavHashLink
-                                                className=" text-slate-300 dark:text-slate-600"
+                                                className=" my-links text-slate-300 dark:text-slate-600 "
                                                 smooth
                                                 to="/#projects"
                                             >
                                                 Projects
                                             </NavHashLink>
                                             <NavHashLink
-                                                className=" text-slate-300 dark:text-slate-600"
-                                                smooth
+                                                className=" my-links text-slate-300 dark:text-slate-600"
                                                 to="/#contact"
                                             >
                                                 Contact
@@ -93,7 +92,7 @@ export default function Example() {
                                 {/*------RESPONSIVE MENU OPENED------- */}
                                 <ul className="flex flex-col items-start md:flex justify-center gap-2 py-2 uppercase font-semibold">
                                     <NavHashLink
-                                        className="text-slate-300 dark:text-slate-600 "
+                                        className="text-slate-300 dark:text-slate-600 hover:animate-ping "
                                         smooth
                                         to="/#"
                                     >

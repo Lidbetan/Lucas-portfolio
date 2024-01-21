@@ -11,14 +11,13 @@ const Portfolio = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center mx-auto ">
                     <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 mx-auto mb-9  text-black dark:text-white">
                         {portfolio.map((projects) => (
-                            <a key={projects.id} href={projects.link} rel="noreferrer" target="_blank">
-                                <PortfolioItem
-                                    key={projects.id}
-                                    imgUrl={projects.imgUrl}
-                                    title={projects.title}
-                                    stack={projects.stack}
-                                />
-                            </a>
+                            <PortfolioItem
+                                key={projects.id}
+                                imgUrl={projects.imgUrl}
+                                title={projects.title}
+                                stack={projects.stack}
+                                link={projects.link}
+                            />
                         ))}
                     </div>
                 </div>
