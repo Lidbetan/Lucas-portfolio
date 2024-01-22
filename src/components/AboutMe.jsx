@@ -8,7 +8,7 @@ const AboutMe = () => {
         <p className="text-center p-2 my-5 text-base md:text-lg lg:text-xl leading-9">
           Hi! I'm Lucas i'm a passionate software developer from Argentina.
           <br /> Since a young age, I have been passionate about technology,
-          reading, and logic.
+          reading, and computers.
           <br /> Programming is the point where all of these passions converge
           for me. I'm always looking for new challenges and experiences. <br />
           Let's connect and explore how we can collaborate to bring your ideas
