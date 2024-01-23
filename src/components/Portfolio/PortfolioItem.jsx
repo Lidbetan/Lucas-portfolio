@@ -1,6 +1,6 @@
 const PortfolioItem = ({ title, imgUrl, stack, link }) => {
     return (
-        <div className="max-w-[425px] max-h-[340px] lg:h-[340px] border-2 border-stone-900 dark:border-stone-300 rounded-md overflow-hidden">
+        <div className="max-w-[425px] max-h-[340px] lg:h-[340px] border-2 bg-slate-200 dark:bg-slate-500 border-stone-900 dark:border-stone-300 rounded-3xl overflow-hidden">
             <div className="border-black border-b-{4px}">
                 <a href={link} rel="noreferrer" target="_blank">
                     <img
@@ -21,7 +21,7 @@ const PortfolioItem = ({ title, imgUrl, stack, link }) => {
                                 border-stone-900 dark:border-stone-300
                                 bg-slate-600 dark:bg-slate-300 
                                 text-white dark:text-black
-                                rounded-md"
+                                rounded-2xl"
                             key={[i]}
                         >
                             {item}

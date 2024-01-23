@@ -3,11 +3,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavHashLink } from "react-router-hash-link";
 
 export default function Example() {
-    
     return (
         <Disclosure
             as="nav"
-            className="bg-slate-600 dark:bg-slate-300 px-4 mt-4 rounded-md w-11/12 lg:w-6/12 xl:w-4/12"
+            className="absolute top-0 bg-slate-600 dark:bg-slate-300 px-4 mt-2 rounded-3xl w-11/12 lg:w-6/12 xl:w-4/12"
         >
             {({ open }) => (
                 <>
@@ -15,7 +14,7 @@ export default function Example() {
                         <div className="relative flex flex-row h-16 mx-auto lg:ml-4 items-center justify-center">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
-                                <Disclosure.Button className="items-center justify-center rounded-md p-2 text-slate-300 dark:text-slate-600 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="absolute top-5 z-10 items-center justify-center text-slate-300 dark:text-slate-600 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     {open ? (
                                         <XMarkIcon
                                             className="block h-6 w-6"
@@ -31,7 +30,7 @@ export default function Example() {
                             </div>
                             <div>
                                 {/*--------LOGO SVG--------*/}
-                        
+
                                 {/* <div className="logo text-slate-300 dark:text-slate-600">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +85,8 @@ export default function Example() {
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
                         </div>
-                    <Disclosure.Panel className="sm:hidden">
+                    
+                    <Disclosure.Panel>
                         <div className=" px-2 pb-3 pt-2">
                             <Disclosure.Button>
                                 {/*------RESPONSIVE MENU OPENED------- */}
