@@ -7,7 +7,7 @@ const ContactForm = () => {
     const form = useRef();
     //Form Validation
     const [valid, setValid] = useState({
-        isValid: "",
+        isValid: 0,
     });
 
     const formInputs = {
@@ -41,11 +41,11 @@ const ContactForm = () => {
             e.preventDefault();
             const { name, email, message } = formInputs;
             if (name == "" || email == "" || message == "") {
-                setValid({});
+                setValid({isValid: 0});
                 console.log("Valid is: ", valid.isValid);
                 return;
             } else {
-                setValid(1);
+                setValid({isValid: 1});
                 console.log("Valid is: truthy", valid.isValid);
             }
             console.log("Submited correctly");
@@ -55,7 +55,7 @@ const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        if (!valid) {
+        if (valid.isValid === 0) {
             // Show an error toast if validation fails
             toast.error('You need to complete all fields', {
                 position: "bottom-center",
@@ -69,7 +69,7 @@ const ContactForm = () => {
             });
             return; // Stop further execution if validation fails
         }
-    
+        if(valid.isValid === 1)
         // Proceed with sending the form if validation passes
         emailjs
             .sendForm(
@@ -138,6 +138,8 @@ const ContactForm = () => {
         <div className="flex flex-col justify-center items-center max-w-[425px] mx-auto">
             <form
                 id="form"
+                ref={form}
+                onSubmit={sendEmail}
                 className="flex flex-col justify-center w-11/12 "
             >
                 <input
@@ -189,8 +191,6 @@ const ContactForm = () => {
 
                 <button
                     type="submit"
-                    form ref={form} 
-                    onSubmit={sendEmail}
                     className="text-center uppercase
              px-5 py-3 w-full md:w-7/12 m-auto text-base
              font-semibold rounded-2xl
