@@ -42,9 +42,9 @@ export default function Example() {
                                         <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z" />
                                     </svg>
                                 </div> */}
-                                <div className="hidden sm:block">
+                                <div className="hidden min-[640px]:flex">
                                     <div className="flex space-x-4">
-                                        <ul className=" md:flex justify-center gap-4 py-2 uppercase font-semibold">
+                                        <ul className=" min-[640px]:flex md:flex justify-center gap-4 py-2 uppercase font-semibold">
                                             <NavHashLink
                                                 className="my-links text-slate-300 dark:text-slate-600  "
                                                 smooth
@@ -90,7 +90,7 @@ export default function Example() {
                         <div className=" px-2 pb-3 pt-2">
                             <Disclosure.Button>
                                 {/*------RESPONSIVE MENU OPENED------- */}
-                                <ul className="flex flex-col items-start md:flex justify-center gap-2 py-2 uppercase font-semibold">
+                                <ul className="flex flex-col items-start justify-center gap-3 py-0 uppercase font-semibold">
                                     <NavHashLink
                                         className="text-slate-300 dark:text-slate-600 hover:animate-ping "
                                         smooth

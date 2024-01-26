@@ -9,7 +9,8 @@ import ThemeContext from "./components/context/ThemeContext"
 import AboutMe from "./components/AboutMe"
 import NavComp from "./components/Navbar/NavComp"
 import Contact from "./components/Contact/Contact"
-import { ToastContainer } from "react-toastify"
+import { ToastContainer } from 'react-toastify';
+
 
 
 function App() {

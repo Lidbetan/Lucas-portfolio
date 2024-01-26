@@ -2,14 +2,13 @@ import { useState, useRef } from "react";
 import { useEffect } from "react";
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
     const form = useRef();
     //Form Validation
-    const [valid, setValid] = useState({
-        isValid: 0,
-    });
-
+    const [valid, setValid] = useState(0);
+    console.log(valid)
     const formInputs = {
         name: "",
         email: "",
@@ -27,7 +26,7 @@ const ContactForm = () => {
             console.log(formInputs);
         };
 
-        if (nameInput !== "") {
+        if (nameInput ) {
             nameInput.addEventListener("input", readInput);
         }
         if (emailInput) {
@@ -41,21 +40,19 @@ const ContactForm = () => {
             e.preventDefault();
             const { name, email, message } = formInputs;
             if (name == "" || email == "" || message == "") {
-                setValid({isValid: 0});
-                console.log("Valid is: ", valid.isValid);
+                setValid(0);
+                console.log("Valid is: ", valid);
                 return;
             } else {
-                setValid({isValid: 1});
-                console.log("Valid is: truthy", valid.isValid);
+                setValid(1);
+                console.log("Valid is: ", valid);
             }
-            console.log("Submited correctly");
+            return valid
         });
     }, []);
     
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        if (valid.isValid === 0) {
+    const sendEmail = () => {
+         if (valid === 0) {
             // Show an error toast if validation fails
             toast.error('You need to complete all fields', {
                 position: "bottom-center",
@@ -69,7 +66,7 @@ const ContactForm = () => {
             });
             return; // Stop further execution if validation fails
         }
-        if(valid.isValid === 1)
+        if(valid === 1 )
         // Proceed with sending the form if validation passes
         emailjs
             .sendForm(
@@ -109,30 +106,7 @@ const ContactForm = () => {
                 }
             );
     };
-
-    //Async function that submits the form after passing the validation.
-    // const submitFormData = async (data) => {
-    //   try {
-    //     const response = await fetch(
-    //       "https://getform.io/f/3f617c8d-0f0a-4835-a6f5-609ba68801f5",
-    //       {
-    //         method: "POST",
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify(data), //Stringifies the data passed as argument
-    //       }
-    //     );
-
-    //     if (response.ok) {
-    //       console.log("Form submitted successfully!");
-    //     } else {
-    //       console.error("Form submission failed");
-    //     }
-    //   } catch (error) {
-    //     console.error("An error occurred during form submission:", error);
-    //   }
-    // };
+    
 
     return (
         <div className="flex flex-col justify-center items-center max-w-[425px] mx-auto">
@@ -178,17 +152,7 @@ const ContactForm = () => {
                        rounded-2xl
                        focus:outline-none"
                 />
-                {/* {valid.isValid === 0 && (
-                    <p className="text-slate-900 dark:text-slate-300 text-center mb-3">
-                        All fields must be completed
-                    </p>
-                )}
-                {valid.isValid === 1 && (
-                    <p className="text-slate-900 dark:text-slate-300 text-center mb-3">
-                        Your message has been submited
-                    </p>
-                )} */}
-
+                
                 <button
                     type="submit"
                     className="text-center uppercase
