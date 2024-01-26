@@ -6,6 +6,7 @@ import ThemeContextProvider from "./components/context/ThemeContextProvider.jsx"
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  
   <React.StrictMode>
     <BrowserRouter>
       <ThemeContextProvider>

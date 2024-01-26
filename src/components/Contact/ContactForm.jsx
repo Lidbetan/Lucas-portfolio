@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useEffect } from "react";
+import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
+    const form = useRef();
     //Form Validation
     const [valid, setValid] = useState({
         isValid: "",
@@ -43,12 +46,69 @@ const ContactForm = () => {
                 return;
             } else {
                 setValid(1);
-                console.log("Valid is: ", valid.isValid);
+                console.log("Valid is: truthy", valid.isValid);
             }
             console.log("Submited correctly");
-            // submitFormData({ name, email, message });
         });
     }, []);
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        if (!valid) {
+            // Show an error toast if validation fails
+            toast.error('You need to complete all fields', {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+            return; // Stop further execution if validation fails
+        }
+    
+        // Proceed with sending the form if validation passes
+        emailjs
+            .sendForm(
+                "default_service",
+                "template_5x58fcv",
+                form.current,
+                `${import.meta.env.VITE_PUBLIC_KEY}`
+            )
+            .then(
+                (result) => {
+                    // Show success toast if the form is successfully submitted
+                    toast.success('Message Submitted', {
+                        position: "bottom-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                    });
+                    console.log(result, "Submitted");
+                },
+                (error) => {
+                    // Show an error toast if there's an issue with form submission
+                    toast.error('Submission failed. Please try again later.', {
+                        position: "bottom-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                    });
+                    console.log(error, "Failed");
+                }
+            );
+    };
 
     //Async function that submits the form after passing the validation.
     // const submitFormData = async (data) => {
@@ -116,7 +176,7 @@ const ContactForm = () => {
                        rounded-2xl
                        focus:outline-none"
                 />
-                {valid.isValid === 0 && (
+                {/* {valid.isValid === 0 && (
                     <p className="text-slate-900 dark:text-slate-300 text-center mb-3">
                         All fields must be completed
                     </p>
@@ -125,10 +185,12 @@ const ContactForm = () => {
                     <p className="text-slate-900 dark:text-slate-300 text-center mb-3">
                         Your message has been submited
                     </p>
-                )}
+                )} */}
 
                 <button
                     type="submit"
+                    form ref={form} 
+                    onSubmit={sendEmail}
                     className="text-center uppercase
              px-5 py-3 w-full md:w-7/12 m-auto text-base
              font-semibold rounded-2xl

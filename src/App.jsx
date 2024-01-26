@@ -1,4 +1,3 @@
-
 import { useContext } from "react"
 import "boxicons"
 import DarkMode from "./components/DarkModeButton/DarkMode"
@@ -10,13 +9,11 @@ import ThemeContext from "./components/context/ThemeContext"
 import AboutMe from "./components/AboutMe"
 import NavComp from "./components/Navbar/NavComp"
 import Contact from "./components/Contact/Contact"
-
-
+import { ToastContainer } from "react-toastify"
 
 
 function App() {
   const {theme, handleThemeSwitch} = useContext(ThemeContext)
-
   return (
     <>
       <button
@@ -28,7 +25,7 @@ function App() {
       </button>
 
       <div className=" flex flex-col items-center justify-center w-11/12 m-auto ">
-  
+        <ToastContainer/>
         <NavComp/> 
         <Intro theme={theme} />
         <AboutMe/>
