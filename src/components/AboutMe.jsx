@@ -7,7 +7,7 @@ const AboutMe = () => {
           About Me
         </h2>
         <p className="text-center p-2 my-5 text-lg md:text-xl lg:text-2xl  leading-9">
-          Hi! I'm Lucas i'm a passionate software developer from Argentina.
+          Hi! I'm Lucas. I'm a passionate software developer from Argentina.
           <br /> Since a young age, I have been passionate about technology,
           reading, and computers.
           <br /> Programming is the point where all of these passions converge
