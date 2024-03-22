@@ -19,5 +19,12 @@ export default [
         imgUrl:"/assets/rtk-post.png",
         stack:["HTML ", "CSS ", "JavaScript ", "Tailwind ", "React ", "Redux", "Vite "],
         link: "https://rtk-post-list.vercel.app/"
+    },
+    {   
+        id:4,
+        title:"Hiupy - Food Inventory",
+        imgUrl:"/assets/hiupy.png",
+        stack:["JavaScript ", "Tailwind ", "React ", "ContextApi", "Vite ", "NodeJs", "Express", "Sequelize"],
+        link: "https://hiupy.vercel.app/"
     }
 ]

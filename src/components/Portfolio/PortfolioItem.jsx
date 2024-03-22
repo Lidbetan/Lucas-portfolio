@@ -6,7 +6,7 @@ const PortfolioItem = ({ title, imgUrl, stack, link }) => {
                     <img
                         src={imgUrl}
                         alt="portfolio-img"
-                        className="w-full h-36 md:h-48 object-fit cursor-pointer "
+                        className="mx-auto h-36 md:h-48 cursor-pointer "
                     ></img>
                 </a>
             </div>
