@@ -25,6 +25,6 @@ export default [
         title:"Hiupy - Food Inventory",
         imgUrl:"/assets/hiupy.png",
         stack:["JavaScript ", "Tailwind ", "React ", "ContextApi", "Vite ", "NodeJs", "Express", "Sequelize"],
-        link: "https://hiupy.vercel.app/"
+        link: "https://hiupy-frontend.vercel.app/"
     }
 ]
