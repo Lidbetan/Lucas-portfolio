@@ -12,13 +12,15 @@ export default [
             "Vite ",
         ],
         link: "https://rockandd.netlify.app/",
+        repo: "https://github.com/Lidbetan/React-E-Commerce",
     },
     {
         id: 2,
-        title: "Coffee Store e-commerce",
-        imgUrl: "/assets/locos-x-el-cafe.png",
-        stack: ["HTML ", "CSS ", "JavaScript ", "Bootstrap ", "SASS"],
-        link: "https://locos-por-el-cafe.vercel.app/",
+        title: "Phone-call transcription component",
+        imgUrl: "/assets/phone-transcription.png",
+        stack: ["NextJS ", "Tailwind", "Typescript"],
+        link: "https://dezure-transcription.vercel.app/",
+        repo: "https://github.com/Lidbetan/dezure-transcription",
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export default [
             "Vite ",
         ],
         link: "https://rtk-post-list.vercel.app/",
+        repo: "https://github.com/Lidbetan/PostList-RTK",
     },
     {
         id: 4,
@@ -50,14 +53,16 @@ export default [
             "Sequelize",
         ],
         link: "https://hiupy.vercel.app/",
+        repo: "https://github.com/Lidbetan/Hiupy",
     },
     {
         id: 5,
-        title: "TalkIAmos",
+        title: "TalkIAmos - Translation App",
         imgUrl: "/assets/talkiamos.png",
         stack: [
             "NextJS ",
             "Tailwind",
+            "Typescript",
             "NextUI ",
             "Zustand",
             "Nest",
@@ -65,5 +70,6 @@ export default [
             "OpenAI API",
         ],
         link: "https://talkiamos.vercel.app/",
+        repo: "https://github.com/No-Country/s14-02m-node-react",
     },
 ];
