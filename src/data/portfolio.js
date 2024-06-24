@@ -69,7 +69,7 @@ export default [
             "MongoDB",
             "OpenAI API",
         ],
-        link: "https://talkiamos.vercel.app/",
-        repo: "https://github.com/No-Country/s14-02m-node-react",
+        link: "https://talkiamosapp.vercel.app/",
+        repo: "https://github.com/Lidbetan/TalkIAmos",
     },
 ];
